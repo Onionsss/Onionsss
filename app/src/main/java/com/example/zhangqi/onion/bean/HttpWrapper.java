@@ -12,7 +12,7 @@ public class HttpWrapper<T> implements Serializable {
     /**
      * code 响应码
      */
-    public String code;
+    public int code;
 
     /**
      * info 对于的响应信息
@@ -50,11 +50,11 @@ public class HttpWrapper<T> implements Serializable {
         this.extraInfo = extraInfo;
     }
 
-    public String getCode() {
+    public int getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(int code) {
         this.code = code;
     }
 

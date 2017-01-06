@@ -1,12 +1,12 @@
-package com.example.zhangqi.onion.frame;
+package com.example.zhangqi.onion.mvp;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.zhangqi.onion.global.AppCenter;
-import com.example.zhangqi.onion.logger.Logger;
-
+import com.jinhuhang.youmi.global.AppCenter;
+import com.jinhuhang.youmi.logger.Logger;
+import com.umeng.analytics.MobclickAgent;
 
 /**
  * Created by zhangqi on 2016/11/8.
@@ -25,13 +25,13 @@ public abstract class ConfigBaseActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-//        MobclickAgent.onResume(this);
+        MobclickAgent.onResume(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-//        MobclickAgent.onPause(this);
+        MobclickAgent.onPause(this);
     }
 
     @Override

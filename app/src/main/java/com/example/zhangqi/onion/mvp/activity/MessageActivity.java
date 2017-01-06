@@ -1,7 +1,8 @@
-package com.example.zhangqi.onion.frame;
+package com.example.zhangqi.onion.mvp.activity;
 
 import android.widget.TextView;
 
+import com.example.zhangqi.onion.mvp.ConfigBaseActivity;
 import com.example.zhangqi.onion.utils.ToastUtil;
 
 
@@ -9,7 +10,7 @@ import com.example.zhangqi.onion.utils.ToastUtil;
  * Created by zhangqi on 2016/10/12.
  */
 
-public abstract class MessageActivity extends ConfigBaseActivity{
+public abstract class MessageActivity extends ConfigBaseActivity {
 
     protected void showMessage(String msg){
         ToastUtil.showShort(this,msg);
@@ -28,7 +29,6 @@ public abstract class MessageActivity extends ConfigBaseActivity{
     }
 
     public String getText(TextView tv){
-        return tv.getText().toString().trim();
+        return tv.getText().toString().trim() == ""?null:tv.getText().toString().trim();
     }
-
 }

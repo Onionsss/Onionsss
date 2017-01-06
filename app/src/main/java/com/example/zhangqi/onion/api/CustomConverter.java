@@ -1,10 +1,10 @@
 package com.example.zhangqi.onion.api;
 
+import com.example.zhangqi.onion.utils.Base64En;
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonWriter;
-import com.jinhuhang.youmi.utils.Base64En;
 
 import java.io.IOException;
 import java.io.OutputStreamWriter;
